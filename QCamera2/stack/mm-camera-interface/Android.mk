@@ -27,6 +27,7 @@ LOCAL_COPY_HEADERS += ../common/cam_intf.h
 LOCAL_COPY_HEADERS += ../common/cam_types.h
 
 LOCAL_C_INCLUDES := \
+    system/media/camera/include \
     $(LOCAL_PATH)/inc \
     $(LOCAL_PATH)/../common
 
