@@ -24,6 +24,6 @@ LOCAL_CLANG := false
 
 LOCAL_MODULE           := libqomx_core
 LOCAL_PRELINK_MODULE   := false
-LOCAL_SHARED_LIBRARIES := libcutils libdl
+LOCAL_SHARED_LIBRARIES := liblog libcutils libdl
 
 include $(BUILD_SHARED_LIBRARY)
