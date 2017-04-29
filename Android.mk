@@ -1,14 +1,9 @@
-MM_V4L2_DRIVER_LIST += msm8960
-MM_V4L2_DRIVER_LIST += msm8974
-MM_V4L2_DRIVER_LIST += msm8226
-MM_V4L2_DRIVER_LIST += msm8610
-MM_V4L2_DRIVER_LIST += msm_bronze
-MM_V4L2_DRIVER_LIST += msm8916
+ifeq ($(call my-dir),$(call project-path-for,qcom-camera))
 
-ifeq ($(call is-board-platform-in-list,$(MM_V4L2_DRIVER_LIST)),true)
-  ifneq ($(USE_CAMERA_STUB),true)
-    ifneq ($(BUILD_TINY_ANDROID),true)
-      include $(call all-subdir-makefiles)
-    endif
+ifneq ($(strip $(USE_DEVICE_SPECIFIC_CAMERA)),true)
+  ifneq ($(filter msm8226 msm8610 msm8974,$(TARGET_BOARD_PLATFORM)),)
+    include $(call all-subdir-makefiles)
   endif
+endif
+
 endif
