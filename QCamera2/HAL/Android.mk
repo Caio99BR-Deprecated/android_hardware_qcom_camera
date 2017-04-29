@@ -1,4 +1,4 @@
-LOCAL_PATH:= $(call my-dir)
+LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := \
@@ -11,13 +11,13 @@ LOCAL_SRC_FILES := \
         QCameraStateMachine.cpp \
         QCameraChannel.cpp \
         QCameraStream.cpp \
-	QCameraPostProc.cpp \
+        QCameraPostProc.cpp \
         QCamera2HWICallbacks.cpp \
         QCameraParameters.cpp \
         QCameraThermalAdapter.cpp \
         wrapper/QualcommCamera.cpp
 
-LOCAL_CFLAGS = -Wall -Werror
+LOCAL_CFLAGS := -Wall -Werror
 #Debug logs are enabled
 #LOCAL_CFLAGS += -DDISABLE_DEBUG_LOG
 
