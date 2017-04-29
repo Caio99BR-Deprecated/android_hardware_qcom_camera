@@ -87,6 +87,8 @@ LOCAL_SHARED_LIBRARIES:= \
 
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_CLANG := false
+
 LOCAL_MODULE:= mm-qcamera-app
 include $(BUILD_EXECUTABLE)
 endif
@@ -176,6 +178,8 @@ LOCAL_SHARED_LIBRARIES:= \
          libcutils libdl libmmcamera_interface
 
 LOCAL_MODULE_TAGS := optional
+
+LOCAL_CLANG := false
 
 LOCAL_MODULE:= libmm-qcamera
 include $(BUILD_SHARED_LIBRARY)

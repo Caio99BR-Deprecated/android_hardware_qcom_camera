@@ -31,6 +31,8 @@ LOCAL_C_INCLUDES += \
     frameworks/base/include/camera \
     frameworks/base/include/media \
 
+LOCAL_CLANG := false
+
 LOCAL_MODULE:= camera_test
 LOCAL_MODULE_TAGS:= tests
 
