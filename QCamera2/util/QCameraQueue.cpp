@@ -27,6 +27,8 @@
 *
 */
 
+#include <malloc.h>
+#include <string.h>
 #include <utils/Errors.h>
 #include <utils/Log.h>
 #include "QCameraQueue.h"
