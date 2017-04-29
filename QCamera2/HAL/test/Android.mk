@@ -43,6 +43,8 @@ LOCAL_C_INCLUDES += \
     frameworks/av/include/media/stagefright \
     frameworks/native/include/media/openmax \
 
+LOCAL_CLANG := false
+
 LOCAL_MODULE:= camera_test
 LOCAL_MODULE_TAGS:= tests
 
