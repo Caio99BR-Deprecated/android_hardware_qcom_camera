@@ -160,7 +160,7 @@ typedef enum {
 typedef struct {
     int                     fd;
     int                     main_ion_fd;
-    ion_user_handle_t       handle;
+    struct ion_handle *     handle;
     uint32_t                size;
     void *                  data;
 } mm_camera_app_meminfo_t;
